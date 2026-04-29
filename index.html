@@ -262,93 +262,93 @@
     <script>
         const questions = [
             {
+                question: "最も訪れたい日本の地域はどこですか？",
+                options: [
+                    { text: "南国の島々（亜熱帯・熱帯地方）", icon: "🌴", type: 8 },
+                    { text: "本州の中部・西部（温暖地）", icon: "🌳", type: 5 },
+                    { text: "北海道や東北（冷涼地）", icon: "❄️", type: 2 },
+                    { text: "標高の高い山岳地帯", icon: "⛰️", type: 4 }
+                ]
+            },
+            {
                 question: "樹木の中で最も惹かれるのはどれですか？",
                 options: [
-                    { text: "樹齢が長く、神々しい杉", icon: "🌳", type: 0 },
+                    { text: "樹齢が長く、神々しい古い杉", icon: "🌲", type: 0 },
                     { text: "秋に美しく紅葉するブナ", icon: "🍁", type: 1 },
-                    { text: "雄大な針葉樹混合林", icon: "🌲", type: 2 },
-                    { text: "個性的でユニークな生態系", icon: "🌿", type: 3 }
+                    { text: "深緑で照葉樹の大きな葉", icon: "🍃", type: 5 },
+                    { text: "珍しい固有種や変わった生態", icon: "🌺", type: 8 }
                 ]
             },
             {
                 question: "森を訪れる時、何を最も重視しますか？",
                 options: [
-                    { text: "歴史的・神聖な雰囲気", icon: "⛩️", type: 6 },
-                    { text: "原始的で神秘的な空気感", icon: "🌫️", type: 7 },
                     { text: "野生動物との出会い", icon: "🦌", type: 2 },
-                    { text: "独特の自然現象や景観", icon: "🌈", type: 3 }
+                    { text: "珍しい植物や固有種との出会い", icon: "🦜", type: 8 },
+                    { text: "歴史的・神聖な雰囲気", icon: "⛩️", type: 6 },
+                    { text: "静寂と瞑想的な空気感", icon: "🧘", type: 1 }
                 ]
             },
             {
-                question: "どのような季節の森が好きですか？",
+                question: "どのような季節の森が最も好きですか？",
                 options: [
-                    { text: "通年で緑深い常緑樹の森", icon: "💚", type: 5 },
-                    { text: "冬も美しい雪化粧の森", icon: "❄️", type: 8 },
-                    { text: "春夏の躍動感あふれる森", icon: "🌱", type: 1 },
-                    { text: "山高い清涼な高地の森", icon: "⛰️", type: 4 }
+                    { text: "冬の雪景色と静寂", icon: "❄️", type: 3 },
+                    { text: "春夏の躍動感とエネルギー", icon: "🌱", type: 8 },
+                    { text: "秋の紅葉と涼しさ", icon: "🍂", type: 1 },
+                    { text: "通年で緑が深い森", icon: "💚", type: 5 }
                 ]
             },
             {
                 question: "森と人間の関係について、どう考えますか？",
                 options: [
-                    { text: "人間の手で丁寧に育てられた森が好き", icon: "🛠️", type: 9 },
-                    { text: "完全に手つかずの原生林が好き", icon: "🌾", type: 6 },
-                    { text: "地域の人が大切にする里山が好き", icon: "👥", type: 1 },
-                    { text: "神秘的で不可思議な森が好き", icon: "🔮", type: 7 }
+                    { text: "人間に全く手を入れられていない原生林", icon: "🌾", type: 7 },
+                    { text: "人間が丁寧に育てた人工林", icon: "🛠️", type: 9 },
+                    { text: "完全に手つかずではないが、自然がメイン", icon: "🤝", type: 6 },
+                    { text: "自然と人間が協力した里山", icon: "👥", type: 1 }
                 ]
             },
             {
-                question: "訪れたい森のスケール感は？",
+                question: "湿度や気候についてどう思いますか？",
                 options: [
-                    { text: "広大で壮大な森（世界遺産級）", icon: "🌍", type: 0 },
-                    { text: "深い緑に包まれた森", icon: "🌳", type: 5 },
-                    { text: "雄大な山岳地帯の森", icon: "🏔️", type: 4 },
-                    { text: "個性的で珍しい森", icon: "✨", type: 3 }
+                    { text: "湿度が高く、温かい気候が好き", icon: "💧", type: 8 },
+                    { text: "湿度が高く、しっとりした環境が好き", icon: "☔", type: 5 },
+                    { text: "冷涼で、空気が澄んだ環境が好き", icon: "🌬️", type: 2 },
+                    { text: "晴天で清々しい山の空気が好き", icon: "☀️", type: 4 }
                 ]
             },
             {
-                question: "特異な自然現象や生態に興味がありますか？",
+                question: "特異な自然現象に興味がありますか？",
                 options: [
-                    { text: "非常にある、珍しい植物や現象を見たい", icon: "🔬", type: 3 },
-                    { text: "少しある、自然観察を楽しみたい", icon: "🔍", type: 8 },
-                    { text: "普遍的な美しさを求める", icon: "😌", type: 1 },
-                    { text: "スケール感や圧倒的自然力に惹かれる", icon: "⚡", type: 0 }
+                    { text: "世界でも稀有な現象・環境が見たい", icon: "🎯", type: 8 },
+                    { text: "珍しい植物や生態系が見たい", icon: "🔬", type: 3 },
+                    { text: "古い歴史を感じたい", icon: "📚", type: 6 },
+                    { text: "圧倒的な自然の壮大さを感じたい", icon: "⚡", type: 4 }
                 ]
             },
             {
-                question: "最も心がリラックスできる環境は？",
+                question: "森のスケール感として好まれるのは？",
                 options: [
-                    { text: "湿度が高く、しっとりした森", icon: "💧", type: 5 },
-                    { text: "清々しく、空気が澄んだ森", icon: "🌬️", type: 2 },
-                    { text: "神聖で落ち着きのある森", icon: "🙏", type: 6 },
-                    { text: "神秘的で魅惑的な森", icon: "🌙", type: 7 }
+                    { text: "広大で世界遺産級の壮大さ", icon: "🌍", type: 0 },
+                    { text: "深い緑に包まれた静けさ", icon: "🌳", type: 1 },
+                    { text: "北方の雄大さと野生動物の気配", icon: "🐻", type: 2 },
+                    { text: "神秘的で独特の空間", icon: "🌫️", type: 7 }
                 ]
             },
             {
-                question: "日本のどの地域の自然に惹かれますか？",
+                question: "訪問のしやすさについてはどう考えますか？",
                 options: [
-                    { text: "南西の亜熱帯・熱帯地方", icon: "🌴", type: 8 },
-                    { text: "北海道の雄大な大地", icon: "🐻", type: 2 },
-                    { text: "中部山岳地帯の清涼感", icon: "❅", type: 4 },
-                    { text: "古都や信仰の地の森", icon: "⛩️", type: 6 }
-                ]
-            },
-            {
-                question: "希少な植物や独特の景観に出会いたいですか？",
-                options: [
-                    { text: "強く望む、地球上で稀有な環境が見たい", icon: "🎯", type: 8 },
-                    { text: "望む、日本でも珍しい種を見たい", icon: "🦜", type: 3 },
-                    { text: "あれば嬉しい程度", icon: "😊", type: 1 },
-                    { text: "普通の美しさで十分", icon: "☀️", type: 9 }
-                ]
-            },
-            {
-                question: "アクセスと訪問のしやすさについては？",
-                options: [
-                    { text: "多少遠くても行く価値がある場所が好き", icon: "🚂", type: 0 },
-                    { text: "秘境でも訪問可能なら挑戦したい", icon: "🗺️", type: 7 },
+                    { text: "多少遠くても、秘境好きで挑戦したい", icon: "🗺️", type: 7 },
                     { text: "比較的アクセスしやすい方が好き", icon: "🚗", type: 9 },
-                    { text: "どこへでも行く覚悟がある", icon: "🏕️", type: 2 }
+                    { text: "どこへでも行く覚悟がある", icon: "🏕️", type: 0 },
+                    { text: "アクセス方法は関係ない", icon: "✈️", type: 8 }
+                ]
+            },
+            {
+                question: "あなたにぴったりな推し森は、どのような特徴ですか？",
+                options: [
+                    { text: "樹齢が長く、悠久の時を感じる", icon: "⏳", type: 0 },
+                    { text: "秋の紅葉が美しく、季節の変化を感じる", icon: "🍁", type: 1 },
+                    { text: "北国の力強さと野生の息吹を感じる", icon: "🌲", type: 2 },
+                    { text: "独特で、他では見られない自然を体験したい", icon: "🌺", type: 8 }
                 ]
             }
         ];
