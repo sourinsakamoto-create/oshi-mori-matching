@@ -36,12 +36,17 @@
         }
 
         .logo-container {
-            font-size: 48px;
-            margin-bottom: 10px;
-            height: 60px;
+            margin-bottom: 20px;
+            height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
 
         .title {
@@ -233,7 +238,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo-container">💚🌿</div>
+            <div class="logo-container">
+                <img src="logo.png" alt="推し森ロゴ">
+            </div>
             <div class="title">推し森マッチング</div>
             <div class="subtitle">Oshi-Mori MY SUPPORT FOREST</div>
         </div>
